@@ -215,7 +215,7 @@ runOcrBtn.addEventListener("click", async () => {
 
   if (type === "application/pdf") {
     const text = await extractFromPDF(file);
-    cleanedText = cleanOcrText(result.data.text);
+    cleanedText = cleanOcrText(text);
     AiMessageInput.value = cleanedText;
     output.value = cleanedText;
     onMessageSend();
