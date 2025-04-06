@@ -20,8 +20,8 @@ const availableModels = webllm.prebuiltAppConfig.model_list.map(
   (m) => m.model_id,
 );
 // let selectedModel = "Llama-3.1-8B-Instruct-q4f32_1-1k";
-// let selectedModel = "SmolLM2-1.7B-Instruct-q4f16_1-MLC";
-let selectedModel = "Mistral-7B-Instruct-v0.3-q4f16_1-MLC";
+ let selectedModel = "SmolLM2-1.7B-Instruct-q4f16_1-MLC";
+//let selectedModel = "Mistral-7B-Instruct-v0.3-q4f16_1-MLC";
 // Callback function for initializing progress
 function updateEngineInitProgressCallback(report) {
   console.log("initialize", report.progress);
